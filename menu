@@ -1,0 +1,39 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+
+local MainWindow = Rayfield:CreateWindow({
+	Name = "主界面",
+	LoadingTitle = "加载中...",
+	LoadingSubtitle = "by Falxe",
+	ConfigurationSaving = {
+	   Enabled = true,
+	   FolderName = nil, -- Create a custom folder for your hub/game
+	   FileName = "McDonalds Hub"
+	},
+	Discord = {
+	   Enabled = false,
+	   Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+	   RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+	},
+	KeySystem = false, -- Set this to true to use our key system
+	KeySettings = {
+	   Title = "此脚本由外国大佬制作我只是汉化",
+	   Subtitle = "Key System",
+	   Note = "卡密: cgb最帅",
+	   FileName = "SiriusKey",
+	   SaveKey = true,
+	   GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+	   Key = "cgb最帅"
+	}
+ })
+
+
+ local MainTab = MainWindow:CreateTab("Main", 4483362458) -- Title, Image
+
+
+ local Button = MainTab:CreateButton({
+	Name = "开启r6菜单",
+	Callback = function(v)
+		v = loadstring(game:HttpGet("https://raw.githubusercontent.com/cgb-chinese/r6-Dong-Hua-by-cgb/refs/heads/main/Source%20Code"))()
+	end,
+ })
