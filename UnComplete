@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cgb-chinese/r6-Dong-Hua-by-cgb/refs/heads/main/menu"))()
